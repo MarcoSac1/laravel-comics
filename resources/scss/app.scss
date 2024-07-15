@@ -58,7 +58,8 @@ header{
 section.jumbo{
     background-image: url(../img/jumbotron.jpg);
     background-repeat: no-repeat;
-    margin: 0 auto;
+    background-size: cover;
+    // width: 100vw;
     height: 400px;
 }
 
@@ -75,5 +76,110 @@ body{
         text-transform: uppercase;
         font-weight: bolder;
         margin: 4rem;
+    }
+}
+
+main {
+    background-color: #1c1c1c;
+    color: white;
+    font-size: 1.5rem;
+
+    .text{
+        width: 1200px;
+        margin: 0 auto;
+        color: white;
+    }
+}
+
+
+footer{
+    background-image: url(../img/footer-bg.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+
+    .social{
+        background-color: #1c1c1c;
+        div{
+            width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            .sing{
+                width: 600px;
+            }
+            button{
+                color: white;
+                padding: 1rem;
+                background-color:#1c1c1c;
+                font-weight: bolder;
+                text-transform: uppercase;
+                border-color :#0080ff;
+                margin: 1rem 0rem;
+            }
+            section.follow{
+            width: 600px;
+            h2{
+                color:#0080ff;
+                margin-bottom: 0;
+                text-transform: uppercase;
+            }
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            ul{
+                display: flex;
+                list-style-type: none;
+            }
+        }
+    }
+    }
+    .container{
+        display: flex;
+        width: 1200px;
+        margin: 0 auto;
+        padding: 1rem;
+    }
+    nav{
+        width: 600px;
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        div{
+            margin-right: 1rem;
+        }
+    ul{
+        flex-direction: column;
+        flex-wrap: wrap;
+        list-style-type: none;
+            li{
+                font-size: .6rem;
+                padding: .3rem .0rem;
+                font-weight: 600;
+                color: white;
+            }
+        }
+    }
+    section.img{
+        background-image: url(../img/dc-logo-bg.png);
+        overflow-y: hidden;
+        position: relative;
+        background-repeat:no-repeat;
+        background-size: contain;
+        left: 110px;
+        bottom: 30px;
+        width: 50vw;
+        height: 30vh;
+    }
+
+    a{
+        color:#858b8f;
+        text-decoration: none;
+        img{
+            margin-left: .6rem;
+        }
+    }
+    h3{
+        color: white;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
     }
 }

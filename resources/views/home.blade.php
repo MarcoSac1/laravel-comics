@@ -9,7 +9,6 @@
 </head>
 <body>
     @include('partials.header')
-    @include('partials.jumbotron')
     @include('partials.main')
     @include('partials.footer')
 </body>
