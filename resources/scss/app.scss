@@ -20,8 +20,10 @@ header{
     img{
         width: 4rem;
     }
-
-    .logo{
+    #logo{
+        width: 50%;
+    }
+    a section.logo{
         background-image: url(../img/dc-logo.png);
         background-repeat: no-repeat;
         width: 50%;
@@ -60,7 +62,7 @@ section.jumbo{
     background-repeat: no-repeat;
     background-size: cover;
     // width: 100vw;
-    height: 400px;
+    height: 350px;
 }
 
 body{
@@ -91,6 +93,37 @@ main {
     }
 }
 
+h3{
+    color: white;
+}
+
+div.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    article{
+        width: calc(100% / 6);
+        padding: 1rem;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        text-align: center;
+        img{
+        width: 100%;
+        height: 218px;
+        object-fit: contain;
+        }
+    }
+    button{
+        border: none;
+        padding: .5rem 2.5rem;
+        background-color:#0080ff ;
+        color: white;
+        text-transform: uppercase;
+        font-weight: bolder;
+    }
+}
 
 footer{
     background-image: url(../img/footer-bg.jpg);

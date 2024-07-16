@@ -4,11 +4,11 @@
             <div>
                 <h3>dc comics</h3>
                 <ul>
-                    <li v-for="link in footerLinks"  :key="link.id">
-                        <a :href="link.url">
-
-                        </a>
+                    @foreach ($dcComicsList as $link )
+                    <li >
+                        {{ $link['title'] }}
                     </li>
+                    @endforeach
                 </ul>
                 <h3>shop</h3>
                 <ul>

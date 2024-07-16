@@ -1,8 +1,9 @@
 <header>
     <section class="container">
-        <section  class="logo">
-
-        </section>
+        <a id="logo" href="/">
+            <section  class="logo">
+            </section>
+        </a>
         <section class="navbar">
             <nav>
                 <ul>
@@ -12,7 +13,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="/comics">
                             comics
                         </a>
                     </li>
