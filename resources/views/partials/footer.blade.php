@@ -12,21 +12,21 @@
                 </ul>
                 <h3>shop</h3>
                 <ul>
-                    <li v-for="link in footerShop"  :key="link.id">
-                        <a :href="link.url">
-
-                        </a>
-                    </li>>
+                    @foreach ($shopList as $link )
+                    <li >
+                        {{ $link['title'] }}
+                    </li>
+                    @endforeach
                 </ul>
             </div>
             <div>
                 <h3>dc</h3>
                 <ul>
-                    <li v-for="link in footerTermOfUse"  :key="link.id">
-                        <a :href="link.url">
-
-                        </a>
+                    @foreach ($dcList as $link )
+                    <li >
+                        {{ $link['title'] }}
                     </li>
+                    @endforeach
                 </ul>
             </div>
             <div>
@@ -51,12 +51,11 @@
                 <section class="follow">
                     <h2>follow us</h2>
                 <ul>
-                    <li v-for="link in footerSocialIcon"  :key="link.id">
-                        <a :href="link.url">
-                            <img :src="getImagePath(link.img)" alt="">
-
-                        </a>
+                    @foreach ($socialList as $link )
+                    <li >
+                        <img src="{{ $link['icon'] }}" alt="">
                     </li>
+                    @endforeach
                 </ul>
                 </section>
             </div>

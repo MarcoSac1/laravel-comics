@@ -63,6 +63,13 @@ section.jumbo{
     background-size: cover;
     // width: 100vw;
     height: 350px;
+    margin-bottom: 2rem;
+}
+
+section.jumbo button{
+    position: relative;
+    bottom: -270px;
+    right: -600px;
 }
 
 body{
@@ -72,7 +79,7 @@ body{
 
     button{
         border: none;
-        padding: .5rem 2.5rem;
+        padding: .8rem 2.5rem;
         background-color:#0080ff;
         color: white;
         text-transform: uppercase;
@@ -197,8 +204,7 @@ footer{
         position: relative;
         background-repeat:no-repeat;
         background-size: contain;
-        left: 110px;
-        bottom: 30px;
+        left: 330px;
         width: 50vw;
         height: 30vh;
     }
